@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@tailwind utilities;
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: IRANSans;
+    --color-customBlue: #145192;
+    --color-pumpkin: #EA7317;
+    --boxShadow-custom  : 32px 32px 2px #145192, 0 8px 16px rgba(20, 81, 146, 0.25);
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('./fonts/Woff2/IRANSansXFaNum-Regular.woff2') format('woff2'),
+    url('./fonts/Woff/IRANSansXFaNum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSansBold';
+    src: url('./fonts/Woff2/IRANSansXFaNum-Bold.woff2') format('woff2'),
+    url('./fonts/Woff/IRANSansXFaNum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.image-sharif {
+    background-image: url('./image/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+[x-cloak] {
+    display: none !important;
+}
